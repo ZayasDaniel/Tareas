@@ -112,7 +112,15 @@ public class Reloj {
     }
 
     public  void avanzar(){
+
+
         this.segundo++;
+        if(this.hora == this.horaAlarma && this.minuto == this.minutoAlarma && this.segundo == this.segundoAlarma){
+            System.out.println("ALARMAAAAA !!!!!!");
+            System.out.println("ALARMAAAAA !!!!!!");
+            System.out.println("ALARMAAAAA !!!!!!");
+
+        }
         if(this.segundo >= 60){
             this.segundo = 0;
             this.minuto++;
@@ -137,4 +145,7 @@ public class Reloj {
         this.minutoAlarma = m;
         this.segundoAlarma = s;
     }
+
+
+
 }
